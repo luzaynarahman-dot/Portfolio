@@ -1,0 +1,434 @@
+/* Google Fonts for Elegance */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&family=Montserrat:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4; /* Soft Pearl Base */
+    font-family: 'Montserrat', sans-serif;
+    color: #4a4a4a;
+    scroll-behavior: smooth;
+}
+
+/* --- NAVBAR DESIGN --- */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(15px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#navbar .logo p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    letter-spacing: 12px; 
+    color: #2c2c2c;
+    font-weight: 500;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+#navbar a:hover {
+    color: #a0a0a0; 
+}
+
+/* --- WELCOME SECTION --- */
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
+                url('silver-img/welcomebg.jpg') no-repeat center center/cover;
+    padding: 0 20px;
+}
+
+#welcome-section h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 7rem;
+    font-weight:900;
+    letter-spacing: 5px;
+    color: #5b6363;
+    text-shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+#welcome-section p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color:#2c2c2c;
+    background: rgba(255, 255, 255, 0.25); 
+    padding: 10px 30px;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* --- INTRODUCTION SECTION --- */
+#intro-section {
+    padding: 100px 10%;
+    height:70vh;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    background:linear-gradient(135deg, rgba(253, 251, 251, 0.6) 0%, rgba(235, 237, 238, 0.6) 100%),     url('silver-img/intro-bg.jpg') no-repeat center center/cover;
+    background-size: cover; 
+    background-position: center;
+}
+
+.intro-text h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+    color: #71706e; 
+}
+
+.intro-text p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+
+
+/* --- SKILLS SECTION --- */
+#skill-section {
+    padding: 80px 10%;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
+                url('silver-img/skill-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+}
+
+#skill-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.skill-card {
+    display:flex;
+    flex-direction :column;
+    gap: 30px;
+}
+
+.skill-card .skill {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: 1px solid #eee;
+    transition: 0.4s;
+}
+
+.skill-card .skill:hover {
+    border: 1px solid #c0c0c0; 
+    transform: translateY(-10px);
+}
+
+.skill-img {
+    width: 150px;
+    min-width:150px;
+    height :150px;
+    object-fit:cover;
+    object-position:center;
+    margin-bottom: 20px;
+    filter: grayscale(100%); 
+    transition: all 0.5s ease-in-out;
+}
+
+.skill{
+    display:flex;
+    flex-direction :row; 
+}
+
+.skill-description{
+    display:flex;
+    flex-direction :column;
+    gap:30px;
+}
+
+/* --- PROJECT TILES --- */
+
+#projects {
+    padding: 100px 8%; 
+    align-items:center;
+    text-align: center; 
+    background:linear-gradient(135deg, rgba(253, 251, 251, 0.6) 0%, rgba(235, 237, 238, 0.6) 100%),     url('silver-img/projectbg.jpg') no-repeat center center/cover;
+    background-size: cover; 
+    background-position: center;
+}
+
+#projects h2 {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 6px;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+#projects > p {
+    font-size: 0.95rem;
+    color: #888;
+    margin-bottom: 60px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.project-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.project-tile {
+    background: #ffffff;
+    border-radius: 20px; 
+    overflow: hidden; 
+    position: relative;
+    border: 1px solid rgba(224, 224, 224, 0.5);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03); 
+}
+
+.project-tile a {
+    text-decoration: none;
+    display: block;
+}
+
+.project-tile img {
+    width: 100%;
+    height: 240px; 
+    object-fit: cover;
+    filter: grayscale(20%);
+    transition: transform 0.8s ease, filter 0.5s ease;
+}
+
+
+.project-tile p {
+    padding: 25px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4a4a4a;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #fff;
+    border-top: 1px solid #f0f0f0;
+}
+
+
+.project-tile:hover {
+    transform: translateY(-12px); 
+    box-shadow: 0 20px 40px rgba(192, 192, 192, 0.25); 
+    border-color: #d1d1d1;
+}
+
+.project-tile:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1); 
+}
+
+.project-tile:hover p {
+    color: #000;
+    background-color: #fafafa;
+}
+
+
+/* --- BUTTON CSS --- */
+
+.btn-link {
+    display: block;      
+    width: fit-content;  
+    margin: 50px auto 0;
+    grid-column: 1 / -1;  
+    padding: 15px 45px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #5b6363;
+    background: #fff;
+    border: 1px solid #c0c0c0;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    text-align: center;
+}
+
+.btn-link:hover {
+    background: #2c2c2c;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+
+/* --- CONTACT --- */
+#contact-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    color: #fff;
+    margin: 0;
+}
+
+#contact-section h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #C0C0C0, #FFFFFF, #E0E0E0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+#contact-section p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-icon a {
+    color: #C0C0C0; 
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+
+.contact-icon a:hover {
+    color: #ffffff;
+    transform: translateY(-10px); 
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8); 
+}
+
+
+
+/* --- MEDIA QUERIES (RESPONSIVE DESIGN) --- */
+
+
+@media (max-width: 768px) {
+    header { 
+        position: sticky; 
+    }
+
+    #navbar {
+        flex-direction: column; 
+        padding: 1.2rem 5%;
+        grid-background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        gap: 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #navbar .logo p {
+        font-size: 1.3rem;
+        letter-spacing: 6px;
+        margin: 0;
+    }
+
+    #navbar a {
+        font-size: 0.7rem;
+        margin: 0 8px; 
+        letter-spacing: 1px;
+    }
+
+    /* Sections Adjustment */
+    #welcome-section h1 {
+        font-size: 3rem; 
+        letter-spacing: 2px;
+    }
+
+    #welcome-section p {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+
+    #intro-section {
+        flex-direction: column; 
+        text-align: center;
+        padding: 60px 8%;
+        height: auto;
+    }
+
+    /* Skills section responsive */
+    .skill {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .skill-img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+
+    /* Project grid */
+    .project-tiles {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #projects h2 {
+        font-size: 2rem;
+    }
+
+    #contact-section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #welcome-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    #navbar a {
+        font-size: 0.6rem;
+        margin: 0 5px;
+    }
+}
