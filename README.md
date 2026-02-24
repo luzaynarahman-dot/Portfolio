@@ -1,8 +1,8 @@
 ★ Luzayna – Personal Portfolio Website:
 
-A personal portfolio website built as part of a FreeCodeCamp (FCC) project requirement — but reimagined beyond the basic demo.
-Instead of replicating the standard template, I chose to design something deeply personal. Since “Luzayna” translates to Silver, I built this portfolio around a silver-inspired aesthetic — reflecting clarity, refinement, and precision.
-This project represents not just my technical progress, but my identity as a developer.
+A personal portfolio website built to showcase my front-end skills and personal style.
+
+Since “Luzayna” translates to Silver, I designed this portfolio around a silver-inspired aesthetic reflecting clarity, refinement, and precision. It represents both my technical growth and my identity as a developer.
 
 ★ Built With:
 
